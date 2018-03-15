@@ -96,12 +96,7 @@ function nombresComunes(nombre, tipo) {
     return rfcNombre;
 }
 
-function esVocal(letra) {
-  if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U' || letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
-    return true;
-  else
-    return false;
-}
+
 
 
 function quitaArticulos(palabra, tipo) {
@@ -114,4 +109,14 @@ function quitaArticulos(palabra, tipo) {
 function contieneAltisonantes(rfc) {
   var palabrasAltisonantes=["BACA", "BAKA", "BUEI", "BUEY", "CACA", "CACO", "CAGA", "CAGO", "CAKA", "COGE", "COGI", "COJA", "COJE", "COJI", "COJO", "COLA", "CULO", "FALO", "FETO", "GETA", "GUEY", "GUEI", "JETA", "JOTO", "KACA", "KACO", "KAGA", "KOJO", "KOJI", "KOJE", "KULO", "KOLA", "KOJA", "KOGI", "KOGE", "KAKA", "KAKO", "KAGO", "KAGA", "LOCA", "LOCO", "LOkO", "MAME", "MAMO", "MEAR", "MIAR", "MEON", "MION", "MEAS", "MOCO", "MOKO", "MULA", "MULO", "NACA", "NACO", "PEDA", "PEDO", "PENE", "PIPI", "PITO", "POPO", "PUTA", "PUTO", "QULO", "RATA", "ROBA", "ROBE", "ROBO", "RUIN", "SENO", "TETA", "VACA", "VAGA", "VAGO", "VAKA", "VUEI", "VUEY", "WEI"];
   return (palabrasAltisonantes.indexOf(rfc) > -1);
+}
+  function hola(){
+    console.log('hola');
+  }
+
+function esVocal(letra) {
+  if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U' || letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
+    return true;
+  else
+    return false;
 }
