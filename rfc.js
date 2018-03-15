@@ -98,7 +98,10 @@ function nombresComunes(nombre, tipo) {
 
 
 
-
+function contieneAltisonantes(rfc) {
+  var palabrasAltisonantes=["BACA", "BAKA", "BUEI", "BUEY", "CACA", "CACO", "CAGA", "CAGO", "CAKA", "COGE", "COGI", "COJA", "COJE", "COJI", "COJO", "COLA", "CULO", "FALO", "FETO", "GETA", "GUEY", "GUEI", "JETA", "JOTO", "KACA", "KACO", "KAGA", "KOJO", "KOJI", "KOJE", "KULO", "KOLA", "KOJA", "KOGI", "KOGE", "KAKA", "KAKO", "KAGO", "KAGA", "LOCA", "LOCO", "LOkO", "MAME", "MAMO", "MEAR", "MIAR", "MEON", "MION", "MEAS", "MOCO", "MOKO", "MULA", "MULO", "NACA", "NACO", "PEDA", "PEDO", "PENE", "PIPI", "PITO", "POPO", "PUTA", "PUTO", "QULO", "RATA", "ROBA", "ROBE", "ROBO", "RUIN", "SENO", "TETA", "VACA", "VAGA", "VAGO", "VAKA", "VUEI", "VUEY", "WEI"];
+  return (palabrasAltisonantes.indexOf(rfc) > -1);
+}
 function quitaArticulos(palabra, tipo) {
   if (tipo == 1) {
     return palabra.replace("DEL ", "").replace("LAS ", "").replace("DE ", "").replace("LA ", "").replace("Y ", "").replace("A ", "").replace("LOS ", "").replace(" TODOS ", "");
@@ -106,6 +109,7 @@ function quitaArticulos(palabra, tipo) {
     return palabra.replace(" DEL ", " ").replace(" LAS ", " ").replace(" DE ", " ").replace(" LA ", "").replace(" Y ", "").replace(" A ", "").replace(" LOS ", " ").replace(" TODOS ", " ").replace("''", "").replace("´", "");
   }
 }
+<<<<<<< HEAD
 function contieneAltisonantes(rfc) {
   var palabrasAltisonantes=["BACA", "BAKA", "BUEI", "BUEY", "CACA", "CACO", "CAGA", "CAGO", "CAKA", "COGE", "COGI", "COJA", "COJE", "COJI", "COJO", "COLA", "CULO", "FALO", "FETO", "GETA", "GUEY", "GUEI", "JETA", "JOTO", "KACA", "KACO", "KAGA", "KOJO", "KOJI", "KOJE", "KULO", "KOLA", "KOJA", "KOGI", "KOGE", "KAKA", "KAKO", "KAGO", "KAGA", "LOCA", "LOCO", "LOkO", "MAME", "MAMO", "MEAR", "MIAR", "MEON", "MION", "MEAS", "MOCO", "MOKO", "MULA", "MULO", "NACA", "NACO", "PEDA", "PEDO", "PENE", "PIPI", "PITO", "POPO", "PUTA", "PUTO", "QULO", "RATA", "ROBA", "ROBE", "ROBO", "RUIN", "SENO", "TETA", "VACA", "VAGA", "VAGO", "VAKA", "VUEI", "VUEY", "WEI"];
   return (palabrasAltisonantes.indexOf(rfc) > -1);
@@ -120,3 +124,6 @@ function esVocal(letra) {
   else
     return false;
 }
+=======
+
+>>>>>>> 47cfbaa3803928a39fb27fbab07a187b622c270b
